@@ -12,7 +12,7 @@ export class OwnersComponent implements OnInit {
   constructor(private http:HttpClient , private  router: Router) {
   }
   ngOnInit(): void {
-    this.http.get("http://localhost:8000/IMMATRICULATION-SERVICE/owners").subscribe({
+    this.http.get("http://localhost:8000/IMMATRICULATION-SERVICE//web/owners").subscribe({
       next:(data)=>{
         this.owners=data;
       },

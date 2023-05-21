@@ -11,11 +11,11 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let c of vehicles._embedded.vehicles">
+    <tr *ngFor="let c of vehicles">
       <td>{{c.id}}</td>
-      <td>{{c.matricule}}</td>
-      <td>{{c.marque}}</td>
-      <td>{{c.puissanceFiscale}}</td>
+      <td>{{c.regNumber}}</td>
+      <td>{{c.brand}}</td>
+      <td>{{c.fiscalPower}}</td>
       <td>{{c.model}}</td>
     </tr>
     </tbody>

@@ -16,7 +16,7 @@ export class VehiclownerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get(`http://localhost:8000/IMMATRICULATION-SERVICE/immatriculations/owners/${this.ownerId}/vehicles`).subscribe({
+    this.http.get(`http://localhost:8000/IMMATRICULATION-SERVICE//web/owners/${this.ownerId}/vehicles`).subscribe({
       next: (data) => {
         this.vehicles = data;
       },

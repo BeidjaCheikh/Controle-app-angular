@@ -14,7 +14,7 @@ export class VehiclesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get("http://localhost:8000/IMMATRICULATION-SERVICE/vehicles").subscribe({
+    this.http.get("http://localhost:8000/IMMATRICULATION-SERVICE//web/vehicles").subscribe({
       next: (data) => {
         this.vehicles = data;
       },
