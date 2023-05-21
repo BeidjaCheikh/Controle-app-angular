@@ -12,7 +12,7 @@ export class RadarsComponent implements OnInit {
   constructor(private http:HttpClient , private  router: Router) {
   }
   ngOnInit(): void {
-    this.http.get("http://localhost:8000/RADARS-SERVICE/radars").subscribe({
+    this.http.get("http://localhost:8000/RADAR-SERVICE/web/radars").subscribe({
       next:(data)=>{
         this.radars=data;
       },

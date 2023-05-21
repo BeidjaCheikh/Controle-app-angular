@@ -1,1 +1,28 @@
-<p>infractions works!</p>
+<div class ="container">
+  <table class="table" *ngIf="infractions">
+    <thead>
+    <tr>
+      <th scope="col"style="background-color: #3498db; color: #ffffff;">ID</th>
+      <th scope="col"style="background-color: #3498db; color: #ffffff;">Date</th>
+      <th scope="col"style="background-color: #3498db; color: #ffffff;">VehicleSpeed</th>
+      <th scope="col"style="background-color: #3498db; color: #ffffff;">RadarMaxSpeed</th>
+      <th scope="col"style="background-color: #3498db; color: #ffffff;">Amount</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let c of infractions">
+      <td>{{c.id}}</td>
+      <td>{{c.date}}</td>
+      <td>{{c.vehicleSpeed}}</td>
+      <td>{{c.radarMaxSpeed}}</td>
+      <td>{{c.fineAmount}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
