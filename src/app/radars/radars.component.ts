@@ -20,7 +20,10 @@ export class RadarsComponent implements OnInit {
     });
 
   }
+  deleteRadar(c: any) {
+    this.router.navigateByUrl("/deleteradar/" + c.id);
 
+  }
 
 
 }

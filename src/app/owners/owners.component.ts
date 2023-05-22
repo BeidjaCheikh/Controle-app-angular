@@ -25,6 +25,10 @@ export class OwnersComponent implements OnInit {
   this.router.navigateByUrl("/owners-vehicles/" + c.id);
 
 }
+  deleteOwner(c: any) {
+    this.router.navigateByUrl("/deleteowner/" + c.id);
+
+  }
 
 
 

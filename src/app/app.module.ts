@@ -9,6 +9,10 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { RadarsComponent } from './radars/radars.component';
 import { InfractionsComponent } from './infractions/infractions.component';
 import { VehiclownerComponent } from './vehiclowner/vehiclowner.component';
+import { DeleOwnerComponent } from './dele-owner/dele-owner.component';
+import { DeleteVehicleComponent } from './delete-vehicle/delete-vehicle.component';
+import { DeleteradarComponent } from './deleteradar/deleteradar.component';
+import { DeleteinfractionComponent } from './deleteinfraction/deleteinfraction.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +22,10 @@ import { VehiclownerComponent } from './vehiclowner/vehiclowner.component';
     RadarsComponent,
     InfractionsComponent,
     VehiclownerComponent,
+    DeleOwnerComponent,
+    DeleteVehicleComponent,
+    DeleteradarComponent,
+    DeleteinfractionComponent,
 
   ],
   imports: [

@@ -7,6 +7,7 @@
       <th scope="col"style="background-color: #3498db; color: #ffffff;">VehicleSpeed</th>
       <th scope="col"style="background-color: #3498db; color: #ffffff;">RadarMaxSpeed</th>
       <th scope="col"style="background-color: #3498db; color: #ffffff;">Amount</th>
+      <th scope="col"style="background-color: #3498db; color: #ffffff;">Delete</th>
 
 
     </tr>
@@ -18,6 +19,11 @@
       <td>{{c.vehicleSpeed}}</td>
       <td>{{c.radarMaxSpeed}}</td>
       <td>{{c.fineAmount}}</td>
+      <td>
+        <button class ="btn btn-danger" (click)="deleteRadar(c)" >Delete
+        <i class="bi bi-trash"></i>
+      </button>
+      </td>
     </tr>
     </tbody>
   </table>

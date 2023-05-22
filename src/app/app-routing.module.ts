@@ -5,6 +5,10 @@ import {VehiclesComponent} from "./vehicles/vehicles.component";
 import {RadarsComponent} from "./radars/radars.component";
 import {VehiclownerComponent} from "./vehiclowner/vehiclowner.component";
 import {InfractionsComponent} from "./infractions/infractions.component";
+import {DeleOwnerComponent} from "./dele-owner/dele-owner.component";
+import {DeleteVehicleComponent} from "./delete-vehicle/delete-vehicle.component";
+import {DeleteradarComponent} from "./deleteradar/deleteradar.component";
+import {DeleteinfractionComponent} from "./deleteinfraction/deleteinfraction.component";
 
 
 const routes: Routes = [
@@ -26,6 +30,19 @@ const routes: Routes = [
   {
     path:"infractions",component :InfractionsComponent
   },
+  {
+    path:"deleteowner/:ownerId",component :DeleOwnerComponent
+  },
+  {
+    path:"deletevehicle/:vehicleId",component :DeleteVehicleComponent
+  },
+  {
+    path:"deleteradar/:radarId",component :DeleteradarComponent
+  },
+  {
+    path:"deleteinfraction/:infractionId",component :DeleteinfractionComponent
+  },
+
 
 
 ]

@@ -6,6 +6,7 @@
       <th scope="col"style="background-color: #3498db; color: #ffffff;">maxSpeed</th>
       <th scope="col"style="background-color: #3498db; color: #ffffff;">Longitude</th>
       <th scope="col"style="background-color: #3498db; color: #ffffff;">Latitude</th>
+      <th scope="col"style="background-color: #3498db; color: #ffffff;">Delete</th>
 
     </tr>
     </thead>
@@ -15,6 +16,12 @@
       <td>{{c.maxSpeed}}</td>
       <td>{{c.longitude}}</td>
       <td>{{c.latitude}}</td>
+
+      <td>
+        <button class ="btn btn-danger" (click)="deleteRadar(c)" >Delete
+          <i class="bi bi-trash"></i>
+        </button>
+      </td>
 
       <!--      <td><button class ="btn btn-success" (click)="getBills(c)" >Bills</button></td>-->
     </tr>

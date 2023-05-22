@@ -22,6 +22,9 @@ export class VehiclesComponent implements OnInit {
       }
     });
 
+  }
+  deleteVehicle(c: any) {
+    this.router.navigateByUrl("/deletevehicle/" + c.id);
 
   }
 }

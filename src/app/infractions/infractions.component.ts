@@ -20,4 +20,8 @@ export class InfractionsComponent implements OnInit {
     });
 
   }
+  deleteRadar(c: any) {
+    this.router.navigateByUrl("/deleteinfraction/" + c.id);
+
+  }
 }

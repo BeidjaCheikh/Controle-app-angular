@@ -7,6 +7,7 @@
       <th scope="col"style="background-color: #3498db; color: #ffffff;">BirthDate</th>
       <th scope="col"style="background-color: #3498db; color: #ffffff;">Email</th>
       <th scope="col"style="background-color: #3498db; color: #ffffff;">Vehicles</th>
+      <th scope="col"style="background-color: #3498db; color: #ffffff;">Delete</th>
 
 
     </tr>
@@ -17,7 +18,13 @@
       <td>{{c.name}}</td>
       <td>{{c.birthDate}}</td>
       <td>{{c.email}}</td>
-      <td><button class ="btn btn-success" (click)="getVehicles(c)" >Vehicles</button></td>
+      <td>
+        <button class ="btn btn-success" (click)="getVehicles(c)" >Vehicles</button>
+      </td>
+      <td> <button class ="btn btn-danger" (click)="deleteOwner(c)" >Delete
+      <i class="bi bi-trash"></i>
+      </button>
+      </td>
 
     </tr>
     </tbody>
